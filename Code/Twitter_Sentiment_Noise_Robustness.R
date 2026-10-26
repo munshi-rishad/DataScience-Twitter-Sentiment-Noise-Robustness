@@ -587,16 +587,6 @@ cat("  CSVs: table_perclass_metrics, table_overall_metrics, cm_best_MLR_BoW_clea
 
 #.............................................................................
 # STEP 7-ADD: Wordcloud from the actual 177-term BoW vocabulary (matches Fig. 2 caption)
-library(wordcloud)
-library(RColorBrewer)
-
-# ============================================
-
-# ============================================
-
-library(wordcloud)
-library(RColorBrewer)
-
 make_wordcloud <- function(n_words = 24) {
   library(wordcloud)
   library(RColorBrewer)
@@ -609,7 +599,7 @@ make_wordcloud <- function(n_words = 24) {
   freq_df <- freq_df[1:n_words, ]
   
   set.seed(123)
-  png(file.path(FIGURE_OUT, "fig2_wordcloud.png"), width = 1400, height = 1000, res = 300)
+  png(file.path(FIGURE_OUT, "fig_wordcloud.png"), width = 1400, height = 1000, res = 300)
   par(mar = c(0, 0, 0, 0))
   wordcloud(words = freq_df$word, freq = freq_df$freq,
             scale = c(4, 0.8),
@@ -620,5 +610,5 @@ make_wordcloud <- function(n_words = 24) {
   
   cat("Done. Fig. 2 caption should say:", n_words, "most frequent terms\n")
 }
-t
+
 make_wordcloud(24)
