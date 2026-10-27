@@ -7,7 +7,7 @@ Bag of Words and TF-IDF features are compared with Naive Bayes, Linear SVM and M
 Introduction to Data Science project, AIUB. The results are written up as a research paper:
 *Classifier Choice Outweighs Representation Choice for Noise-Robust Twitter Sentiment Classification*.
 
-**Semester:** Summer 2025-2026 (Introduction to Data Science)
+**Semester:** Summer 2025-2026
 
 ## Features
 
